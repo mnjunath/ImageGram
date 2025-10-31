@@ -13,7 +13,7 @@ app.use(express.urlencoded());
 
 app.use('/api', apiRouter); // if the URL starts with /api then the request is forwarded to api router.
 
-app.get('/', isAuthenticated, (req, res) => {
+app.get('/', (req, res) => {
   return res.send('Hello, World!');
 });
 
