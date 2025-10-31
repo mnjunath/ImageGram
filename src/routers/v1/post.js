@@ -1,7 +1,7 @@
 import express from "express";
 import { s3uploader } from "../../config/multerConfig.js";
 import { createPost, getAllPosts, deletePost, updatePost } from "../../controllers/postController.js";
-import { zodPostSchema } from "../../validator/zodpostSchema.js";
+import { zodPostSchema } from "../../validator/zodPostSchema.js";
 import { validate } from "../../validator/zodValidator.js";
 
 const router = express.Router();
